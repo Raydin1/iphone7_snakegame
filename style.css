@@ -1,0 +1,63 @@
+body.night {
+  background-color: #222;
+  color: white;
+}
+
+body.day {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background-color: #111;
+  border: 2px solid #fff;
+  touch-action: none;
+  width: 100vw;
+  height: 100vw;
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+#controls {
+  margin: 10px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+#info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #controls button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
